@@ -1,5 +1,8 @@
 FROM tiangolo/uwsgi-nginx-flask:python3.8
 
+# FOR GCP CLOUD RUN
+# ENV PYTHONUNBUFFERED True
+
 RUN apt update
 RUN yes | apt install vim
 
