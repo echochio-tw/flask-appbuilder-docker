@@ -9,4 +9,4 @@ WORKDIR /app
 ENV STATIC_URL /app/static
 ENV STATIC_PATH /var/www/app/static
 
-RUN pip install -r /app/requirements.txt
+RUN pip install --no-cache-dir -r /app/requirements.txt
